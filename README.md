@@ -1,3 +1,6 @@
+# ice-starters-template
+Template project that ICE workshop attendees can use
+
 # Running the frontend
 - Enter the deployed token contract addresses in `.env` file.
 - Tested with node version *v16.14.0*  

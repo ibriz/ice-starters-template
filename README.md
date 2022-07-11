@@ -11,3 +11,14 @@
 ```$ truffle compile```
 - Deploying contracts to local blockchain:  
 ```$ truffle deploy```
+
+## Debug Info
+- If you ever get the error message `Transaction is temporarily banned` while deploying contract, it means  that a transaction with the same hash was either:
+
+  1. Part of recently mined block
+  2. Detected as invalid during block production and removed from the pool  <br/>
+  <br/>
+- A transaction is only temporarily banned because it will be removed from the blacklist when either:
+
+  1. 30 minutes pass
+  2. There are more than 4,000 transactions on the blacklist
